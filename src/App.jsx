@@ -23,6 +23,7 @@ function App() {
       document.documentElement.classList.remove('dark')
     }
   }, [theme])
+  console.log("ENV KEY:", import.meta.env.VITE_GEMINI_KEY);
 
   const handleAsk = async () => {
     if (!question && !selectedHistory) return
